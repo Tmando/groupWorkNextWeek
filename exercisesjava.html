@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onresize="resizeWindow()" onload="randomColor()">
+<p id="upperCase"></p>
+<p id="width"></p>
+<p id="height"></p>
+<p>Math<input type="number" id="grade1" ></p>
+<p>Phisic<input type="number" id="grade2"></p>
+<p>English<input type="number" id="grade3"></p>
+<a id='bla'>Test1</a>
+<a>Test2</a>
+<a>Test3</a>
+
+<p id="avrege"></p><br>
+<button type="submit" onclick="calc()" >Submit
+</button><br>
+
+<p>pls insert minutes <input type="number" id="time"></p>
+
+<button type="submit" onclick="resultTime()">submit</button>
+<p id="outputtime"></p>
+<script type="text/javascript" charset="utf-8" async defer>
+
+
+//exercise1
+	function crystalGazer(childnr, job, partnerName, geographic){
+		
+	document.write("You will be a ",job," in ", geographic," and married to ",partnerName, " with ",childnr,".");
+	}
+	crystalGazer(3, "web developer", "Peter", "London");
+	document.write("<br>")
+	crystalGazer(5, "Puff besitzer", "Gregor", "Wien");
+//exercise 2
+function ageCalculator(year, currentYear){
+var result=currentYear-year;
+document.write(result,' or ',result-1);
+}
+document.write("<br>");
+ageCalculator(1993,2017);
+document.write("<br>");
+ageCalculator(1970,2017);
+//exercise 3
+function ageCalculator2(year){
+	curDate = new Date();
+	var result=curDate.getFullYear()-year;
+	document.write(result,' or ',result-1);
+}
+document.write("<br>");
+ageCalculator2(1993);
+document.write("<br>");
+ageCalculator2(1970);
+
+//exercise 4
+function degreesToRadian(degree){
+	var radian=degree*(Math.PI/180);
+	return radian;
+}
+document.write("<br>");
+document.write(degreesToRadian(25));
+
+//exercise 5
+
+function areaVolume(width,height,depth){
+	var area=width*height;
+	var volume=width*height*depth;
+	var areaString="The area of the box is: "+area+"<br>"+" The Volume of the box is: "+volume;
+	return areaString;
+}
+document.write("<br>");
+document.write(areaVolume(10,5,3));
+ //exercise 6 see exercise6.html
+ //ex1 intermediate look at exercise 4
+
+ //ex2 intermediate
+
+ function avrege(math,phisic,english){
+ 	var finalStr = '';
+ 	try{
+ 	var finalGrade=(Number(math)+Number(phisic)+Number(english))/3;
+ 	var sumGrade=(Number(math)+Number(phisic)+Number(english));
+ 	finalStr = 'Sum: '+ sumGrade + '<br>' + "Avarage: " + finalGrade;
+
+	}catch(err){
+		console.log("Something is wrong");
+ 	
+ 	}
+ 	return finalStr;
+}
+document.write("<br>");
+document.write(avrege(3,2,1));
+document.write("<br>");
+document.write(avrege('3','2','1'));
+document.write("<br>");
+document.write(avrege('3','2','a1'));
+
+function calc(){
+
+	document.getElementById("avrege").innerHTML=avrege(document.getElementById("grade1").value,document.getElementById("grade2").value,document.getElementById("grade3").value);
+
+}
+
+//ex 3 intermediate
+
+function resizeWindow(){
+	var width=window.innerWidth;
+	var height=window.innerHeight;
+	document.getElementById("width").innerHTML=width;
+	document.getElementById("height").innerHTML=height;
+
+
+}
+
+//ex 4 intermediate
+
+var currentstring='i am a developer';
+
+var anonym=function(currentstring){
+    var newString=currentstring.charAt(0).toUpperCase()+currentstring.slice(1);
+    
+    return newString;
+}
+document.getElementById("upperCase").innerHTML=anonym(currentstring);
+
+//ex 5 intermediate
+
+function convertTime(minutes){
+	var hour=parseInt(minutes/60);
+	var minutesoutput=minutes%60;
+	document.getElementById("outputtime").innerHTML=minutes+" = "+hour+" hour(s) "+" and "+minutesoutput+" minute(s).";
+
+}
+function resultTime(){
+	convertTime(document.getElementById("time").value);
+}
+
+// ex 6 intermediate
+
+var yesterdayDate=function(date){
+	curDate = new Date(date);
+	curDate.setDate(curDate.getDate()-1);
+//return curDate.getDay()+curDate.getMonth()+curDate.getDate()+curDate.getFullYear();
+return curDate.toISOString();
+}
+document.write(yesterdayDate("Apr,11,1985"));
+
+// ex 7 intermediate
+
+function randomColor(){
+	var r=Math.floor(Math.random()*256);
+	var g=Math.floor(Math.random()*256);
+	var b=Math.floor(Math.random()*256);
+	var result= "rgb("+r+","+g+","+b+")";
+	document.body.style.background=result;
+	document.getElementById('bla').innerHTML='hallo';
+		
+	
+}
+
+
+
+
+
+
+
+</script>
+</button>
+</body>
+</html>

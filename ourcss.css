@@ -1,0 +1,80 @@
+body {
+	background-color: green;
+}
+
+.container_wraparound{
+	width: 60vw;
+	margin: 0 auto;
+	background-color: red;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	flex-basis: 10vh;
+	background-color: blue;
+
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	padding: 15px;
+}
+
+nav a{
+	flex-basis: 10vw;
+}
+
+#container_homepage{
+	flex-basis: 80vh;
+
+	background-color: yellow;
+}
+
+#container_homepage1{
+	display: flex;
+	flex-direction: row;
+}
+#myProjects{
+	flex-basis: 20vw;
+	background-color: yellow;
+	height: 100vh;
+}
+
+#container_homepage2{
+	background-color: white;
+	flex-basis: 80vw;
+	height: 100vh;
+}
+
+#container_homepage2_wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#container_homepage2_wrapper img{
+	flex-basis: 27vh;
+	max-width: 15vw;
+	margin-left: 350px;
+	margin-top:90px;
+	border: 2px solid black;	
+}
+
+#container_homepage2_wrapper h1{
+	flex-basis: 10vh;
+}
+
+#container_homepage2_Lorem{
+	flex-basis: 60vh;
+	margin-right: 30px;
+}
+footer{
+	background-color: blue;
+	flex-basis: 20vh;
+}

@@ -16,6 +16,9 @@ header{
 	background-color: blue;
 
 }
+header nav a{
+	text-decoration: none;
+}
 
 nav{
 	display: flex;
@@ -42,8 +45,19 @@ nav a{
 }
 #myProjects{
 	flex-basis: 20vw;
-	background-color: yellow;
+	background-color: white;
 	height: 100vh;
+}
+#myProjects ul{
+	border:3px solid grey;
+	list-style-type: none;
+}
+#myProjects li{
+	margin-left: -2vw;
+	margin-top: 2vh;
+}
+#myProjects li:hover{
+
 }
 
 #container_homepage2{
@@ -63,7 +77,7 @@ nav a{
 	max-width: 15vw;
 	margin-left: 350px;
 	margin-top:90px;
-	border: 2px solid black;	
+	border: 2px solid black;
 }
 
 #container_homepage2_wrapper h1{
@@ -77,4 +91,16 @@ nav a{
 footer{
 	background-color: blue;
 	flex-basis: 20vh;
+}
+.project1{
+	display: none;
+
+}
+.elem1:hover .project1{
+
+	display: block;
+	position: relative;
+  left: 200px;
+  border: 3px solid #73AD21;
+
 }

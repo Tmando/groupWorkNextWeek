@@ -1,0 +1,138 @@
+.awsomebody {background-image:
+                    url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+                    linear-gradient(to right, rgba(30, 75, 115, 1),  rgba(255, 255, 255, 0));
+
+  background-repeat:
+                     ,
+                     ;
+
+  background-position:
+                       left,
+                       center;
+                       margin-top: 30px;
+}
+	
+.container_wraparound{
+	width: 60vw;
+	margin: 0 auto;
+	background-color: red;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	border: 3px solid black;
+	border-bottom: 3px solid;
+	flex-basis: 10vh;
+	background-image: linear-gradient(to right, rgba(60, 95, 115, 1), rgba(0,0,0,0.7));
+	text-transform: uppercase;
+	text-shadow: 3px 2px red;
+}
+header nav a{
+	text-decoration: inherit;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+nav a{
+	flex-basis: 10vw;
+}
+/*.div_backgrndimg
+{
+    background-repeat: repeat-y;
+    background-image: url("Tod.png");
+}*/
+
+#container_homepage{
+	flex-basis: 80vh;
+
+	background-color: grey;
+}
+/*This functions bad so we 
+
+#container_homepage ficker{
+	background-size: 60px,30px; 
+	background-repeat: repeat-y;
+    background-image: url(Tod.png);
+}
+*/
+#container_homepage1{
+	display: flex;
+	flex-direction: row;
+}
+#myProjects{
+	flex-basis: 20vw;
+	height: 100vh;
+	border: 2px solid black;
+	background-image: url(https://www.shirtlabor.de/media/shirtlabor/user_patterns/450x450/anker-herz-v2-1c-5074.svg);
+
+}
+#myProjects ul{
+	
+	list-style-type: none;
+}
+#myProjects li{
+	margin-left: -2vw;
+	margin-top: 2vh;
+}
+#myProjects li:hover{
+
+}
+/*hier habe ich den Trollgrund eingebaut*/
+#container_homepage2{
+	background-image: url(https://www.shirtlabor.de/media/shirtlabor/user_patterns/450x450/anker-herz-v2-1c-5074.svg),
+	linear-gradient(to right, rgba(200, 210, 195, 0.1), rgba(200,250,250,0.7));
+	background-size: 30px 30px, 0 auto;
+	background-repeat:repeat-x, no-repeat;
+	flex-basis: 80vw;
+	height: 100vh;
+	border: 2px solid black;
+}
+
+#container_homepage2_wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#container_homepage2_wrapper img{
+	flex-basis: 27vh;
+	max-width: 15vw;
+	margin-left: 350px;
+	margin-top:90px;
+	border: 2px solid black;
+}
+
+#container_homepage2_wrapper h1{
+	flex-basis: 10vh;
+}
+
+#container_homepage2_Lorem{
+	flex-basis: 60vh;
+	margin-right: 30px;
+}
+footer{
+	background-image: linear-gradient(to right, rgba(60, 95, 115, 1), rgba(0,0,0,0.7));
+	flex-basis: 20vh;
+	border: 3px solid black;
+}
+.project1{
+	display: none;
+
+}
+.elem1:hover .project1{
+
+	display: block;
+	position: relative;
+  left: 200px;
+  border: 3px solid black;
+
+}
